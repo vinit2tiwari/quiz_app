@@ -34,7 +34,12 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                   Spacer(), // 1/6
                   InkWell(
-                    onTap: () => Get.to(Home()),
+                    onTap: () => {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Home()),
+                      )
+                    },
                     child: Container(
                       width: double.infinity,
                       alignment: Alignment.center,
