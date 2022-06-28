@@ -18,7 +18,7 @@ class WelcomeScreen extends StatelessWidget {
                   Spacer(flex: 2), //2/6
                   Text(
                     "Let's Play Quiz,",
-                    style: Theme.of(context).textTheme.headline4.copyWith(color: Colors.white, fontWeight: FontWeight.bold),
+                    style: Theme.of(context).textTheme.headline4.copyWith(color: Colors.green, fontWeight: FontWeight.bold),
                   ),
                   Text("Enter your informations below"),
                   Spacer(), // 1/6
