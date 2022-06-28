@@ -25,7 +25,7 @@ class WelcomeScreen extends StatelessWidget {
                   TextField(
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: Color(0xFF1C2341),
+                      fillColor: Colors.green,
                       hintText: "Full Name",
                       hintStyle: TextStyle(color: Colors.yellow),
                       border: OutlineInputBorder(
