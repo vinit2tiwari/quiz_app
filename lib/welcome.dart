@@ -4,6 +4,8 @@ import 'package:flutter_mentor_quiz_app_tut/home.dart';
 import 'package:get/get.dart';
 
 class WelcomeScreen extends StatelessWidget {
+  final myController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,6 +25,7 @@ class WelcomeScreen extends StatelessWidget {
                   Text("Enter your informations below"),
                   Spacer(), // 1/6
                   TextField(
+                    controller: myController,
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: Color(0xFF1C2341),
@@ -36,6 +39,16 @@ class WelcomeScreen extends StatelessWidget {
                   Spacer(), // 1/6
                   InkWell(
                     onTap: () => {
+                      showDialog(
+                        context: context,
+                        builder: (context) {
+                          return AlertDialog(
+                            // Retrieve the text the that user has entered by using the
+                            // TextEditingController.
+                            content: Text(myController.text),
+                          );
+                        },
+                      ),
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => Home()),
