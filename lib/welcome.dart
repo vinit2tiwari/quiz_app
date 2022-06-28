@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mentor_quiz_app_tut/constant.dart';
 import 'package:flutter_mentor_quiz_app_tut/home.dart';
 import 'package:get/get.dart';
-import 'package:flutter_svg/svg.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -10,7 +9,6 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          SvgPicture.asset("assets/icons/bg.svg", fit: BoxFit.fill),
           SafeArea(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
