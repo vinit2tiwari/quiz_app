@@ -27,6 +27,7 @@ class WelcomeScreen extends StatelessWidget {
                       filled: true,
                       fillColor: Color(0xFF1C2341),
                       hintText: "Full Name",
+                      hintStyle: TextStyle(color: Colors.red),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(12)),
                       ),
