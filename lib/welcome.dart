@@ -39,16 +39,6 @@ class WelcomeScreen extends StatelessWidget {
                   Spacer(), // 1/6
                   InkWell(
                     onTap: () => {
-                      showDialog(
-                        context: context,
-                        builder: (context) {
-                          return AlertDialog(
-                            // Retrieve the text the that user has entered by using the
-                            // TextEditingController.
-                            content: Text(myController.text),
-                          );
-                        },
-                      ),
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => Home()),

@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mentor_quiz_app_tut/answer.dart';
 
 class Home extends StatefulWidget {
+  final String name;
+  Home({this.name});
+
   @override
-  _HomeState createState() => _HomeState();
+  _HomeState createState() => _HomeState(name: name);
 }
 
 class _HomeState extends State<Home> {
@@ -13,6 +16,8 @@ class _HomeState extends State<Home> {
   bool answerWasSelected = false;
   bool endOfQuiz = false;
   bool correctAnswerSelected = false;
+  String name;
+  _HomeState({this.name});
 
   void _questionAnswered(bool answerScore) {
     setState(() {
@@ -68,7 +73,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Flutter Mentor Quiz App',
+          name,
           style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
