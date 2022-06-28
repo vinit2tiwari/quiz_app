@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mentor_quiz_app_tut/constant.dart';
+import 'package:flutter_mentor_quiz_app_tut/home.dart';
 import 'package:get/get.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -7,7 +9,6 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          SvgPicture.asset("assets/icons/bg.svg", fit: BoxFit.fill),
           SafeArea(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
@@ -33,7 +34,7 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                   Spacer(), // 1/6
                   InkWell(
-                    onTap: () => Get.to(QuizScreen()),
+                    onTap: () => Get.to(Home()),
                     child: Container(
                       width: double.infinity,
                       alignment: Alignment.center,
