@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mentor_quiz_app_tut/welcome.dart';
+import 'package:quiz_app/welcome.dart';
 
 void main() {
   runApp(MyApp());

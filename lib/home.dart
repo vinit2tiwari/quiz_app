@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mentor_quiz_app_tut/answer.dart';
+import 'package:quiz_app/answer.dart';
 
 class Home extends StatefulWidget {
   @override

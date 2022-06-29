@@ -1,5 +1,5 @@
-name: flutter_mentor_quiz_app_tut
-description: A Quiz App
+name: quiz_app
+description: Demo quiz apps
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
