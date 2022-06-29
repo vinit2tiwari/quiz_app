@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/answer.dart';
 import 'package:quiz_app/question.dart';
-import 'package:quiz_app/answer.dart';
 
 class Home extends StatefulWidget {
   @override
