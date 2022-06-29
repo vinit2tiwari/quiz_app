@@ -59,8 +59,7 @@ class WelcomeScreen extends StatelessWidget {
                   Text(
                     "Name: Anshika Anand \nRoll no: 102103380\nBranch:COE,Class:1COE-14",
                     style: TextStyle(color: Colors.purple),
-                  ),
-                  Spacer(flex: 1) // it will take 2/6 spaces
+                  ) // it will take 2/6 spaces
                 ],
               ),
             ),
