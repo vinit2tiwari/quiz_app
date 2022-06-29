@@ -56,7 +56,7 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                   ),
                   Spacer(flex: 2),
-                  Text("Name: Anshika Anand \n Roll no: 102103380") // it will take 2/6 spaces
+                  Text("Name: Anshika Anand \nRoll no: 102103380\nBranch:COE,Class:1COE-14") // it will take 2/6 spaces
                 ],
               ),
             ),
