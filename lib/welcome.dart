@@ -55,7 +55,8 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Spacer(flex: 2), // it will take 2/6 spaces
+                  Spacer(flex: 2),
+                  Padding(padding: EdgeInsets.symmetric(vertical: kDefaultPadding * 0.75), child: Text("Name: Anshika Anand \nRoll no: 102103380\nBranch:COE,Class:1COE-14", style: TextStyle(color: Colors.purple))) // it will take 2/6 spaces
                 ],
               ),
             ),
